@@ -54,7 +54,7 @@ const Header = () => {
   const pageName = pathname?.split("/")?.filter(Boolean)?.[0];
 
   return (
-    <div className="flex flex-row h-14 px-4 md:px-5 justify-between items-center sticky top-0 z-20 bg-white dark:bg-black shadow-md">
+    <div className="flex flex-row h-13 px-3 md:px-5 justify-between items-center sticky top-0 z-20 bg-white dark:bg-black shadow-md">
       {loading && <Loader />}
 
       <div className="flex h-5 items-center">
@@ -113,11 +113,11 @@ const Header = () => {
               isOnline ? "hover:bg-[#34a0a4]/[0.7]" : "hover:bg-[#f2bad5]/[0.4]"
             }`}
           >
-            {isOnline ? (
+            {/* {isOnline ? (
               <HiOutlineStatusOnline className="text-[#1795a8] dark:text-[#7cf6fd] text-xl" />
             ) : (
               <HiOutlineStatusOffline className="text-[#f74a8a] text-xl" />
-            )}
+            )} */}
           </div>
           <div
             onClick={handleThemeSwitch}
@@ -130,14 +130,14 @@ const Header = () => {
             )}
           </div>
         </div>
-        <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4">
-          <Link to={"https://github.com/thecodophile"}>
+        {/* <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4">
+          <Link to={"https://github.com/singhawanish13"}>
             <img
               src="https://avatars.githubusercontent.com/u/108585532?v=4"
               alt="Codophile"
             />
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
